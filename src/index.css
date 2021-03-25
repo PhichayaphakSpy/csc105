@@ -1,13 +1,419 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  font-family: Georgia;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header {
+  display: flex;
+  align-items: center;
 }
+
+img {
+  height: 300px; 
+  width: auto;
+  margin:auto;
+  padding-left: 150px;
+}
+
+.choose {
+  display : block;
+  margin : 10px 100px;
+  border-radius: 200px 200px 0px 0px;
+  background-color: rgb(255, 238, 202);
+  padding : 70px;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+.choose hr {
+  position: relative;
+ left: 15%;
+}
+
+.element{
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding: 50px;
+  font-size: larger;
+  font-weight: bolder;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.element{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.element Button{
+  border-radius: 50%;
+  height: 120px;
+  width: 120px;
+  margin : 0px 40px 30px 0px;
+  text-align: center;
+  width: 121.35px !important;
+  height: 120px !important;
+  display: block;
+}
+
+
+
+.vanilla{
+  background-image:url(./Components/Home/Body/Step1/Element1/vanilla.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+  display: block;
+}
+
+.straw{
+  background-image:url(./Components/Home/Body/Step1/Element1/straw.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.choc {
+  background-image:url(./Components/Home/Body/Step1/Element1/choc.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.matcha {
+  background-image:url(./Components/Home/Body/Step1/Element1/matcha.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.milk {
+  background-image:url(./Components/Home/Body/Step1/Element1/milk.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.coffee {
+  background-image:url(./Components/Home/Body/Step1/Element1/coffee.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.berry {
+  background-image:url(./Components/Home/Body/Step2/Element2/berry.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.biscuit {
+  background-image:url(./Components/Home/Body/Step2/Element2/biscuit.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.bs {
+  background-image:url(./Components/Home/Body/Step2/Element2/butterscotch.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.caramel{
+  background-image:url(./Components/Home/Body/Step2/Element2/caramel.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.chip {
+  background-image:url(./Components/Home/Body/Step2/Element2/chip.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.chocolate {
+  background-image:url(./Components/Home/Body/Step2/Element2/chocolate.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.maple {
+  background-image:url(./Components/Home/Body/Step2/Element2/maple.jpeg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.oreo {
+  background-image:url(./Components/Home/Body/Step2/Element2/oreo.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.rose{
+  background-image:url(./Components/Home/Body/Step2/Element2/rose.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.strawberry{
+  background-image:url(./Components/Home/Body/Step2/Element2/strawberry.jpg);
+  background-position: 50% 50%;
+  background-size: contain;
+}
+
+.element3{
+  text-align: center;
+  margin: 5%;
+}
+
+.step{
+  position: relative;
+  padding-top: 50px;
+  font-size: larger;
+  font-weight: bolder;
+  text-align: center;
+
+}
+
+.buttons{
+  background-color: #f1e5de;
+  border-color: salmon;
+  border-width: 0px;
+  padding: 16px 32px;
+  border-radius: 8px;
+  transition-duration: 0.4s;
+  margin-left: 50px;
+  color: black;
+}
+.buttons:hover {
+  background-color: rgb(245, 139, 139); 
+  border-color: salmon;
+  color: black;
+}
+
+hr{
+    border-top: 1px solid black;
+    width: 70%;
+    align-items: center;
+}
+
+.AddToCartButton {
+box-shadow: 0px 1px 0px 0px #fbafe3;
+background:linear-gradient(to bottom, #eb9eab 10%, #ef027d 100%);
+background-color:#ff5bb0;
+border-radius:35px;
+display:inline-block;
+cursor:pointer;
+color:#ffffff;
+font-size:16px;
+font-weight:bold;
+padding:18px 32px;
+text-decoration:none;
+text-shadow:0px 1px 6px #c70067;
+}
+.AddToCartButton:hover {
+background:linear-gradient(to bottom, #ef027d 5%, #eb9eab 100%);
+background-color:#ef027d;
+}
+.AddToCartButton:active {
+position:relative;
+top:1px;
+}
+
+#Basket {
+  clear: both;
+  float: left;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500&display=swap');
+
+body {
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	/*background-image: url("top-view-monochrome-ice-cream.jpg");
+    color : rgb(78, 71, 71);*/
+}
+
+
+.container {
+    padding: 20px;
+      width:500px;
+    position: absolute;
+    left:50%;
+    top: 50%;
+    transform: translate(-50%, -40%);
+      border:1px solid #ccc;
+      border-radius:10px;
+      background:white;
+  -webkit-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  -moz-box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
+  }
+
+  .containing{
+    padding: 50px;
+    background-color: rgb(244, 245, 238);
+  }
+
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+select {
+  width: 18%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+}
+
+input[type=phone] {
+  width: 81%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=phone]:focus, select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+
+button[type="submit"] ,.buttonss {
+  background-color: #7a0392;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+	font-size:16px;
+	font-family: Montserrat,Arial, Helvetica, sans-serif;
+	border-radius:10px;
+}
+
+button[type="submit"]:hover {
+  opacity:1;
+}
+
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 40px;
+  color: white;
+  background: rgba(212, 127, 127, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 0.4px 0.4px rgba(128, 128, 128, 0.109),
+    0 1px 1px rgba(255, 248, 248, 0.155),
+    0 2.1px 2.1px rgba(128, 128, 128, 0.195),
+    0 4.4px 4.4px rgba(128, 128, 128, 0.241),
+    0 12px 12px rgba(128, 128, 128, 0.35);
+}
+    .login-form h1 {
+    margin: 0 0 24px 0;
+  }
+
+  .form-input-material {
+    margin: 12px 0;
+  }
+
+
+
+@media screen and (max-width: 300px) {
+  .signupbtn {
+     width: 100%;
+  }
+}
+
+
+
+.lighter-text {
+  color: #ABB0BE;
+}
+
+.main-color-text {
+  color: #cb85d1;
+}
+
+
+.containerForCart {
+  margin: auto;
+  width: 80%;
+}
+
+.badge {
+    background-color: #8e4897;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.shopping-cart {
+  margin: 20px 0;
+  float: right;
+  background: white;
+  width: 400px;
+  position: relative;
+  border-radius: 3px;
+  padding: 20px;
+} 
+  
+  .shopping-cart  .shopping-cart-header {
+    border-bottom: 1px solid #E8E8E8;
+    padding-bottom: 15px;
+  }  
+  .shopping-cart  .shopping-cart-header  .shopping-cart-total {
+      float: right;
+    }
+  
+  
+  .shopping-cart-items {
+    
+    padding-top: 20px; }
+
+    .shopping-cart-items  li {
+        margin-bottom: 18px;
+      }
+    
+      .shopping-cart-items  .item-name {
+      display: block;
+      padding-top: 10px;
+      font-size: 16px;
+    }
+    
+    .shopping-cart-items  .item-price {
+      color: #6394F8;
+      margin-right: 8px;
+    }
+    
+    .shopping-cart-items  .item-quantity {
+      color: #ABB0BE;
+    }
+  
+  
+
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+

@@ -1,17 +1,8 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Checkout Station</title>
+import React from 'react'
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-   
-
-    
-  </head>
-  <body class="bg-light">
-    
-<div class="container">
+const SummaryOrder = () => {
+    return (
+        <div className="containing">
   <main>
     <div class="py-5 text-center">
       <h2>Checkout station</h2>
@@ -60,22 +51,22 @@
 
         <form class="card p-2">
           <div class="input-group">
-            <input type="text" class="form-control" placeholder="Promo code">
+            <input type="text" class="form-control" placeholder="Promo code"/>
             <button type="submit" class="btn btn-secondary">Redeem</button>
           </div>
         </form>
       </div>
       <div class="col-md-7 col-lg-8">
         <h4 class="mb-3">Shipping address</h4>
-        <hr class="my-4">
+        <hr class="my-4"/>
 
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="same-address">
+            <input type="checkbox" class="form-check-input" id="same-address"/>
             <label class="form-check-label" for="same-address">Use the registered address</label>
           </div>
 
           <div class="form-check">
-            <input type="checkbox" class="form-check-input" id="save-info">
+            <input type="checkbox" class="form-check-input" id="save-info"/>
             <label class="form-check-label" for="save-info">Send to other address</label>
           </div>
 
@@ -83,7 +74,7 @@
           <div class="row g-3">
             <div class="col-sm-6">
               <label for="firstName" class="form-label">First name</label>
-              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required/>
               <div class="invalid-feedback">
                 Valid first name is required.
               </div>
@@ -91,7 +82,7 @@
 
             <div class="col-sm-6">
               <label for="lastName" class="form-label">Last name</label>
-              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required/>
               <div class="invalid-feedback">
                 Valid last name is required.
               </div>
@@ -101,7 +92,7 @@
               <label for="username" class="form-label">Username</label>
               <div class="input-group has-validation">
                 <span class="input-group-text">@</span>
-                <input type="text" class="form-control" id="username" placeholder="Username" required>
+                <input type="text" class="form-control" id="username" placeholder="Username" required/>
               <div class="invalid-feedback">
                   Your username is required.
                 </div>
@@ -110,7 +101,7 @@
 
             <div class="col-12">
               <label for="email" class="form-label">Email <span class="text-muted">(Optional)</span></label>
-              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+              <input type="email" class="form-control" id="email" placeholder="you@example.com"/>
               <div class="invalid-feedback">
                 Please enter a valid email address for shipping updates.
               </div>
@@ -118,7 +109,7 @@
 
             <div class="col-12">
               <label for="address" class="form-label">Address</label>
-              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+              <input type="text" class="form-control" id="address" placeholder="1234 Main St" required/>
               <div class="invalid-feedback">
                 Please enter your shipping address.
               </div>
@@ -126,7 +117,7 @@
 
             <div class="col-12">
               <label for="address2" class="form-label">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+              <input type="text" class="form-control" id="address2" placeholder="Apartment or suite"/>
             </div>
 
             <div class="col-md-5">
@@ -153,25 +144,25 @@
 
             <div class="col-md-3">
               <label for="zip" class="form-label">Zip</label>
-              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <input type="text" class="form-control" id="zip" placeholder="" required/>
               <div class="invalid-feedback">
                 Zip code required.
               </div>
             </div>
           </div>
 
-          <hr class="my-4">
+          <hr class="my-4"/>
 
           <h4 class="mb-3">Payment</h4>
 
           <div class="my-3">
             <div class="form-check">
-              <input id="Cashondelivery" name="paymentMethod" type="radio" class="form-check-input" required>
+              <input id="Cashondelivery" name="paymentMethod" type="radio" class="form-check-input" required/>
               <label class="form-check-label" for="Cashondelivery">Cash on delivery</label>
             </div>
             
             <div class="form-check">
-              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required/>
               <label class="form-check-label" for="credit">Credit card</label>
             </div>
             
@@ -182,7 +173,7 @@
           <div class="row gy-3">
             <div class="col-md-6">
               <label for="cc-name" class="form-label">Name on card</label>
-              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required/>
               <small class="text-muted">Full name as displayed on card</small>
               <div class="invalid-feedback">
                 Name on card is required
@@ -191,7 +182,7 @@
 
             <div class="col-md-6">
               <label for="cc-number" class="form-label">Credit card number</label>
-              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required/>
               <div class="invalid-feedback">
                 Credit card number is required
               </div>
@@ -199,7 +190,7 @@
 
             <div class="col-md-3">
               <label for="cc-expiration" class="form-label">Expiration</label>
-              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required/>
               <div class="invalid-feedback">
                 Expiration date required
               </div>
@@ -207,14 +198,14 @@
 
             <div class="col-md-3">
               <label for="cc-cvv" class="form-label">CVV</label>
-              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required/>
               <div class="invalid-feedback">
                 Security code required
               </div>
             </div>
           </div>
 
-          <hr class="my-4">
+          <hr class="my-4"/>
 
           <button class="w-100 btn btn-primary btn-lg" type="submit">Continue to checkout</button>
         </form>
@@ -232,9 +223,7 @@
   </footer>
 </div>
 
+    );
+};
 
-    <script src="/docs/5.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
-
-      <script src="form-validation.js"></script>
-  </body>
-</html>
+export default SummaryOrder;

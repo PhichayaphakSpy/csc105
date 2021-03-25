@@ -1,17 +1,23 @@
-import './CSS/Home.css';
-import { Header } from "./Home/Header/Header";
-import { Choose } from "./Home/Body/ChooseForm/Choose";
-import { Title1 } from './Home/Body/Step1/Title1/Title1';
-import { Element1 } from './Home/Body/Step1/Element1/Element1';
+import { BrowserRouter as Router, Route, Switch} from "react-router-dom";
 
+import {Home} from './Components/Home/Home'
+import {Form} from './Components/Register/Form/Form'
+import SummaryOrder from "./Components/SummaryOrder/SummaryOrder";
 
-function App() {
-  return (
-    <div>
-      <Header/>
-        <Choose/> 
-    </div>
-  );
-};
+ function App() {
+   return (
+    
+          <Router>
+            <div>
+            <Switch>
+        <Route exact path="/" > <Home/></Route>
+        <Route path="/Register"> <Form/> </Route>
+        <Route path="/CheckOut"> <SummaryOrder/></Route>
+          </Switch>
+          </div>
+          </Router>
+    )
+ }
+    
 
 export default App;

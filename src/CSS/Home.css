@@ -10,7 +10,7 @@
 
 img {
     height: 300px; 
-    width: 300px;
+    width: auto;
     display: block;
   margin-left: auto;
   margin-right: auto;
@@ -22,7 +22,7 @@ img {
     border-radius: 200px 200px 0px 0px;
     background-color: rgb(255, 238, 202);
     padding : 70px;
-    
+    align-items: center;
 }
 
 .element {
@@ -108,5 +108,4 @@ img {
  #Basket {
     clear: both;
     float: left;
-    right: 60px;
 }
