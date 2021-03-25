@@ -2,8 +2,8 @@
 
 body {
 	font-family: Montserrat,Arial, Helvetica, sans-serif;
-	background-image: url("top-view-monochrome-ice-cream.jpg");
-    color : rgb(78, 71, 71);
+	/*background-image: url("top-view-monochrome-ice-cream.jpg");
+    color : rgb(78, 71, 71);*/
 }
 * {box-sizing: border-box}
 
@@ -22,7 +22,7 @@ body {
   box-shadow: 2px 1px 21px -9px rgba(0,0,0,0.38);
   }
 
-/* Full-width input fields */
+
 input[type=text], input[type=password] {
   width: 100%;
   padding: 15px;

@@ -1,0 +1,112 @@
+*{
+    font-family: Georgia;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    height: 300px; 
+    width: 300px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.choose {
+    display : block;
+    margin : 10px 100px;
+    border-radius: 200px 200px 0px 0px;
+    background-color: rgb(255, 238, 202);
+    padding : 70px;
+    
+}
+
+.element {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 50px;
+    font-size: larger;
+    font-weight: bolder;
+    justify-content: center;
+}
+
+ span {
+    position: relative;
+    padding-top: 50px;
+    padding-left: 50px;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.element img {
+    border-radius: 50%;
+    display: block;
+    height: 120px;
+    width: 120px;
+    margin : 0px 40px 30px 0px;
+
+}
+
+.step{
+    position: relative;
+    padding-top: 50px;
+    
+    font-size: larger;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.buttons{
+    background-color: #f1e5de;
+    border-color: salmon;
+    border-width: 0px;
+    padding: 16px 32px;
+    border-radius: 8px;
+    transition-duration: 0.4s;
+    margin-left: 50px;
+}
+.buttons:hover {
+    background-color: rgb(245, 139, 139); 
+    border-color: salmon;
+    color: black;
+  }
+
+  hr{
+      border-top: 1px solid black;
+      width: 70%;
+      align-items: center;
+  }
+
+  .AddToCartButton {
+	box-shadow: 0px 1px 0px 0px #fbafe3;
+	background:linear-gradient(to bottom, #eb9eab 10%, #ef027d 100%);
+	background-color:#ff5bb0;
+	border-radius:35px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:16px;
+	font-weight:bold;
+	padding:18px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 6px #c70067;
+}
+.AddToCartButton:hover {
+	background:linear-gradient(to bottom, #ef027d 5%, #eb9eab 100%);
+	background-color:#ef027d;
+}
+.AddToCartButton:active {
+	position:relative;
+	top:1px;
+}
+
+ #Basket {
+    clear: both;
+    float: left;
+    right: 60px;
+}
